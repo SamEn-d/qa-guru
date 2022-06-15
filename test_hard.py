@@ -1,7 +1,14 @@
 from selene.support.shared import browser
 from selene import be, have
+import pytest
 import time
-def hard_form():
+
+@pytest.fixture(scope='session', autouse=True)
+def window_size():
+    browser.open('data:')
+    browser.driver.set_window_size(width=1920, height=1080)
+
+def test_hard_form(window_size):
     browser.open('https://demoqa.com/automation-practice-form')
     # browser.open('https://demoqa.com/automation-practice-form').driver.maximize_window()
     browser.execute_script("var el = document.querySelectorAll('#app > footer'); if (el.length > 0); { el[0].remove(); }")
@@ -30,4 +37,4 @@ def hard_form():
     browser.element('#submit').click()
     # browser.
     time.sleep(5)
-hard_form()
+test_hard_form()
