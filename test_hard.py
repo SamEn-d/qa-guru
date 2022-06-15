@@ -1,18 +1,7 @@
 from selene.support.shared import browser
 from selene import be, have
-import pytest
-import time
-
-
-
-# @pytest.fixture(scope='session', autouse=True)
-# def windowsize(site_demoqa):
-#     # browser.open('data:')
-#     # browser.driver.set_window_size(width=1920, height=1080)
-#     browser.config.window_width = 1920
-#     browser.config.window_height = 1080
-
-
+# import pytest
+# import time
 
 def test_hard_form(site_demoqa):
     # browser.open('https://demoqa.com/automation-practice-form')
@@ -40,7 +29,4 @@ def test_hard_form(site_demoqa):
     browser.element('#city').click()
     browser.element('#city #react-select-4-option-1').click()
     browser.element('#submit').click()
-    # browser.
-    # time.sleep(5)
-# test_hard_form()
-# hard_form()
+    # time.sleep(5) #Для отладки

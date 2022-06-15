@@ -15,5 +15,5 @@ def test_one_broken(open_google):
     # browser.open('https://google.com')
     # browser.driver.set_window_size(width=1920, height=1080)
     browser.element('[name="q"]').should(be.blank).type(google_search_text).press_enter()
-    browser.element('[id="search"]').should(have.text(google_search_results))
+    browser.element('[id="search"]').should(have.text(google_search_results_broken))
 
