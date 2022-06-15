@@ -10,6 +10,8 @@ tests/comparison/
 tests/adhoc/test_anything.py
 custom.png
 
+.idea
+test_google.py
 # allure
 allure-results/
 allure-report/
@@ -99,6 +101,7 @@ instance/
 # Scrapy stuff:
 .scrapy
 
+
 # Sphinx documentation
 docs/_build/
 
@@ -113,7 +116,7 @@ target/
 profile_default/
 ipython_config.py
 
-test_google.py
+
 # pyenv, asdf
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
