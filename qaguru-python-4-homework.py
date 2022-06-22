@@ -10,9 +10,6 @@ from selene import be, have
 def_list = []
 site = 'https://demoqa.com/automation-practice-form'
 
-# def GFG():
-#     return "You just called for success !!"
-# print("The name of function is : " + GFG.__name__)
 
 def normal_name(func_name_new):
     if func_name_new == 'open_browser':
